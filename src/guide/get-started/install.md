@@ -48,28 +48,27 @@ for details.
 ## Install Iroha from GitHub
 
 1.  If you haven’t already, you might want to create a clean folder for
-    Iroha 2, to keep things tidy.
+    Iroha 2, to keep things tidy. 
 
     ```bash
-    $ mkdir -p ~/Git
+    $ mkdir -p ~/hyperledger
     ```
 
     ::: tip
+    Previously the docs mentioned `~/Git` directory instead of `~/hyperledger`. If you already have a working installation, consider moving it to the new directory:
 
-    On macOS, if you get
-    `fatal: could not create work tree dir 'iroha': Read-only file system`,
-    that’s because the home folder is not a real file system. The fix is to
-    create the `Git` folder.
-
+    ```bash
+    $ mv ~/Git ~/hyperledger
+    ```
     :::
 
 2.  Enter the directory you have just created using
 
     ```bash
-    $ cd ~/Git
+    $ cd ~/hyperledger
     ```
 
-3.  Then `clone` the Iroha git repository into the folder `~/Git/iroha` and
+3.  Then `clone` the Iroha git repository into the folder `~/hyperledger/iroha` and
     `checkout` the branch you prefer to work on. You can use the
     `iroha2-lts` branch, which is the long-term support release, or the
     latest stable release branch (`iroha2-stable`). To clone the repository
